@@ -199,7 +199,7 @@ function renderResults(response) {
         divCard = $("<div class='box yelp-img-box'>").append(figure, infoDiv);
         $(divCard).attr("onClick", "getResultDetails($(this))");
 
-        // var linkDiv = $(`<a class="blink" href=${response.businesses[i].url} target="_blank">`).append(`${divCard}`);
+        // var linkDiv = $(`<a class="blink" href=${response.businesses[i].url}>`).append(`${divCard}`);
 
         col = $("<div class='column is-4'>").append(divCard);
         $("#imageContainer").append(col);
